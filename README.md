@@ -1,2 +1,3 @@
-# OOP Labs
-This repository is a general archive for OOP lab solutions.
+# Lab 10
+Solution for lab 10.
+Run with `./gradlew run`.
