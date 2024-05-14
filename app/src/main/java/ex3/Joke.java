@@ -8,6 +8,7 @@ public class Joke {
 
     @Override
     public String toString() {
-        return "Joke type: %s\nID: %d\n\n%s\n%s".formatted(type, id, setup, punchline);
+        return "Joke type: %s\nID: %d\n\n%s\n%s"
+            .formatted(type, id, setup, punchline);
     }
 }

@@ -17,7 +17,9 @@ public class JokeApiClient {
             HttpRequest request = HttpRequest.newBuilder(
                 new URI("https://official-joke-api.appspot.com/random_joke")
             ).GET().build();
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            HttpResponse<String> response = client.send(
+                request, HttpResponse.BodyHandlers.ofString()
+            );
             return response.body();
         } catch (URISyntaxException | IOException | InterruptedException e) {
             System.err.println("Error: " + e.getMessage());

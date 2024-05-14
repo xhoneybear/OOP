@@ -17,7 +17,9 @@ public class App {
 
         String json = null;
         try {
-            json = Files.readString(Paths.get(App.class.getResource("/students.json").toURI()));
+            json = Files.readString(Paths.get(
+                App.class.getResource("/students.json").toURI()
+            ));
         } catch (IOException | URISyntaxException e) {
             System.err.println("File not found");
         }

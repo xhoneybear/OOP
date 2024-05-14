@@ -7,7 +7,10 @@ public class Student {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("Name: %s%nMajor: %s%nCourses: %n".formatted(name, major));
+        StringBuilder sb = new StringBuilder(
+            "Name: %s%nMajor: %s%nCourses: %n"
+                .formatted(name, major)
+        );
         for (Course course : courses) {
             sb.append("- ")
               .append(course.toString())
@@ -16,3 +19,4 @@ public class Student {
         return sb.toString();
     }
 }
+
